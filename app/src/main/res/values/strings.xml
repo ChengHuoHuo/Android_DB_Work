@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">大胆说出来</string>
+    <string name="login_username_hint">请输入账号</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_label_usernamer">账号</string>
+    <string name="revise_password_hint">请确认密码</string>
+    <string name="revise_label_password">新密码</string>
+
+
+</resources>

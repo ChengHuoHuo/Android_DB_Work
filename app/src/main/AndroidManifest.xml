@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="maze.chenghuohuo.dbwork">
+
+    <!-- &lt;!&ndash; 允许联网 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+    <!-- &lt;!&ndash; 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <!-- &lt;!&ndash; 获取wifi网络状态的信息 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <!-- &lt;!&ndash; 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+    <!-- &lt;!&ndash; 获取sd卡写的权限，用于文件上传和下载 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- &lt;!&ndash; 允许读取手机状态 用于创建BmobInstallation &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="首页" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".WriteActivity" />
+        <activity android:name=".InsertActivity" />
+        <activity android:name=".UpdateActivity" />
+        <activity android:name=".UserManageActivity" />
+        <activity android:name=".ReviseActivity" />
+        <activity android:name=".ShowActivity"
+            android:theme="@style/ShowActivityTheme"></activity>
+    </application>
+
+</manifest>
